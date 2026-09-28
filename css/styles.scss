@@ -140,10 +140,9 @@ body{
   margin-bottom: calc(10 / 16 * 1rem);
 }
 
-.line{
-  background-color: var(--black);
-  height: 100%;
-  width: calc(1 / 16 * 1rem);
+.info-content{
+  border-left:2px solid var(--black);
+  padding-inline-start: calc(10 / 16 * 1rem);
 }
 
 .icon{

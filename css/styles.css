@@ -138,10 +138,9 @@ body {
   margin-bottom: 0.625rem;
 }
 
-.line {
-  background-color: var(--black);
-  height: 100%;
-  width: 0.0625rem;
+.info-content {
+  border-left: 2px solid var(--black);
+  padding-inline-start: 0.625rem;
 }
 
 .icon {
