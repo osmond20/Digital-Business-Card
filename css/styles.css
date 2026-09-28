@@ -4,15 +4,15 @@
   font-family: "Poiret One";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poiret-one-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/poiret-one-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* lilita-one-regular - latin */
+/* baumans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lilita One";
+  font-family: "Baumans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/lilita-one-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/baumans-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   /* Primary Water Blues */
@@ -34,6 +34,8 @@
   --gear-shadow: var(--dark-grey);
   --water-gradient: linear-gradient(135deg, var(--sky-blue), var(--primary-blue), var(--deep-blue));
   --gear-gradient: linear-gradient(135deg, var(--light-grey), var(--silver), var(--medium-grey));
+  --font-1: "Lilita One";
+  --font-2: "Poiret One";
 }
 
 /* || RESET */
@@ -85,8 +87,25 @@ body {
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-inline: 0.9375rem;
   height: 31rem;
   width: 18rem;
   background-color: var(--white);
   border-radius: 1.25rem;
+}
+
+.logo {
+  height: 8.75rem;
+  width: 8.75rem;
+}
+
+.main-title, .alt-title {
+  font-family: var(--font-1);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.sub-title {
+  font-family: var(--font-2);
 }/*# sourceMappingURL=styles.css.map */
