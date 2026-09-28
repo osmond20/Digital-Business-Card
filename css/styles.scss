@@ -79,7 +79,7 @@ ol {
 
 body{
   display: flex;
-  height: 100vh;
+  height: 100%;
   align-items: center; 
   width: 100%;
   justify-content: center;
@@ -97,6 +97,7 @@ body{
   background-color: var(--white);
   border-radius: calc(20 / 16 * 1rem);
   gap: calc(3 / 16 * 1rem);
+  margin-top: 80px;
 }
 
 .logo{
