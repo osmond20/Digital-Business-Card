@@ -13,7 +13,7 @@
   font-family: 'Baumans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/baumans-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../assets/fonts/baumans-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root{
@@ -36,7 +36,7 @@
 --gear-shadow: var(--dark-grey);
 --water-gradient: linear-gradient(135deg, var(--sky-blue), var(--primary-blue), var(--deep-blue));
 --gear-gradient: linear-gradient(135deg, var(--light-grey), var(--silver), var(--medium-grey));
---font-1: "Lilita One";
+--font-1: "Baumans";
 --font-2: "Poiret One";
 }
 
@@ -84,31 +84,85 @@ body{
   width: 100%;
   justify-content: center;
   background-color: var(--sky-blue);
+  font-family: var(--font-1);
 }
 
 .card{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: calc(15 / 16 * 1rem);
+  padding-inline: calc(30 / 16 * 1rem);
   height: 31rem;
   width: 18rem;
   background-color: var(--white);
   border-radius: calc(20 / 16 * 1rem);
+  gap: calc(3 / 16 * 1rem);
 }
 
 .logo{
-  height: calc(140 / 16 * 1rem);
-  width: calc(140 / 16 * 1rem);
+  height: calc(180 / 16 * 1rem);
+  width: calc(180 / 16 * 1rem);
 }
 
-.main-title, .alt-title{
+.main-title{
   font-family: var(--font-1);
-  font-size: calc(18 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
   font-weight: 400;
+  font-weight: bold;
+}
+
+.alt-title{
+  font-family: var(--font-1);
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 400;
+  font-weight: bold;
 }
 
 .sub-title{
   font-family: var(--font-2);
-
+  font-size: calc(14 / 16 * 1rem);
+  color:var(--light-blue);
 }
+
+.info-component{
+  margin-top: calc(20 / 16 * 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-container{
+  display: flex;
+  height:30px;
+  width: 100%;
+  gap: calc(5 / 16 * 1rem);
+  align-items: center;
+  margin-bottom: calc(10 / 16 * 1rem);
+}
+
+.line{
+  background-color: var(--black);
+  height: 100%;
+  width: calc(1 / 16 * 1rem);
+}
+
+.icon{
+  height: calc(20 / 16 * 1rem);
+  width: calc(20 / 16 * 1rem);
+  filter: brightness(0) saturate(100%) invert(21%) sepia(96%) saturate(2544%) hue-rotate(214deg) brightness(95%) contrast(104%);
+}
+
+.links{
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: calc(15 / 16 * 1rem);
+}
+
+.links:hover{
+  color:var(--water-primary)
+}
+.p-text{
+  font-weight: bold;
+  font-size: calc(13.5 / 16 * 1rem);
+}
+
